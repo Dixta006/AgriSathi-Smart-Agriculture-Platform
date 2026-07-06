@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AgriSathi Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <footer>
+
+<h3>🌱 AgriSathi</h3>
+
+<p>
+Empowering Indian Farmers Through Technology
+</p>
+
+<p>
+© 2026 AgriSathi. All Rights Reserved.
+</p>
+
+</footer>
+
+<nav>
+    <div class="logo">🌱 AgriSathi</div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/farmers">Farmers</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/market">Market Prices</a></li>
+        <li><a href="/schemes">Schemes</a></li>
+        <li><a href="/experts">Experts</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="dashboard">
+
+<h1>📊 AgriSathi Analytics Dashboard</h1>
+
+<div class="stats">
+
+<div class="card">
+<h2>500+</h2>
+<p>Registered Farmers</p>
+</div>
+
+<div class="card">
+<h2>15+</h2>
+<p>Crops Supported</p>
+</div>
+
+<div class="card">
+<h2>₹22.4L</h2>
+<p>Total Market Value</p>
+</div>
+
+<div class="card">
+<h2>8</h2>
+<p>Partner Experts</p>
+</div>
+
+<div class="card">
+<h2>24/7</h2>
+<p>Support Available</p>
+</div>
+
+<div class="card">
+<h2>85%</h2>
+<p>Scheme Coverage</p>
+</div>
+
+<div class="card">
+<h2>18</h2>
+<p>Districts Covered</p>
+</div>
+
+<div class="card">
+<h2>320</h2>
+<p>PM-KISAN Beneficiaries</p>
+</div>
+
+</div>
+
+<h2 style="text-align:center;">Dashboard Insights</h2>
+
+<div class="chart-container">
+
+<div class="chart-card">
+<h3>🌾 Crop Distribution</h3>
+<img src="https://quickchart.io/chart?c={type:'pie',data:{labels:['Wheat','Rice','Maize','Cotton'],datasets:[{data:[40,30,20,10]}]}}" width="100%">
+</div>
+
+<div class="chart-card">
+<h3>📈 Farmers by State</h3>
+<img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['Punjab','Haryana','Maharashtra','Rajasthan'],datasets:[{data:[120,95,150,85]}]}}" width="100%">
+</div>
+<div class="chart-container">
+
+<div class="chart-card">
+<h3>🏛️ Scheme Enrollment</h3>
+<img src="https://quickchart.io/chart?c={type:'doughnut',data:{labels:['PM-KISAN','PMFBY','KCC'],datasets:[{data:[250,150,100]}]}}" width="100%">
+</div>
+
+<div class="chart-card">
+<h3>💰 Average Market Price</h3>
+<img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['Wheat','Rice','Cotton','Maize'],datasets:[{data:[2450,3200,7200,2100]}]}}" width="100%">
+</div>
+
+</div>
+<input
+type="text"
+placeholder="Search Farmer..."
+style="width:50%;padding:15px;margin:20px;">
+<h2 style="text-align:center;margin-top:50px;">
+Registered Farmers
+</h2>
+
+<table class="price-table">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>State</th>
+<th>Crop</th>
+<th>Land Holding</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Raj Kumar</td>
+<td>Punjab</td>
+<td>Wheat</td>
+<td>5 Acres</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Sunita Devi</td>
+<td>Haryana</td>
+<td>Rice</td>
+<td>3 Acres</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Amit Singh</td>
+<td>Maharashtra</td>
+<td>Cotton</td>
+<td>7 Acres</td>
+</tr>
+
+</table>
+</section>
+
+</body>
+</html>

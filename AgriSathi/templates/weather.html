@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather Advisory</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+<div class="logo">🌱 AgriSathi</div>
+
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/weather">Weather</a></li>
+<li><a href="/dashboard">Dashboard</a></li>
+</ul>
+
+</nav>
+
+<div class="services">
+
+<h1>🌦 Weather Advisory</h1>
+
+<section class="stats">
+
+<div class="card">
+    <h2>32°C</h2>
+    <p>Temperature</p>
+</div>
+</section>
+
+<h2 style="text-align:center;margin-top:40px;">
+7 Day Forecast
+</h2>
+</table>
+
+<div class="chart-container">
+
+<div class="chart-card">
+
+<h3>🌡 Temperature Trend</h3>
+
+<img src="https://quickchart.io/chart?c={type:'line',data:{labels:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],datasets:[{data:[32,30,28,29,31,33,34]}]}}" width="100%">
+
+</div>
+
+<div class="chart-card">
+
+<h3>🌧 Rainfall Forecast</h3>
+
+<img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],datasets:[{data:[10,40,70,30,15,5,5]}]}}" width="100%">
+
+</div>
+
+</div>
+
+<table class="price-table">
+
+<tr>
+<th>Day</th>
+<th>Weather</th>
+<th>Max Temp</th>
+<th>Rain Chance</th>
+</tr>
+
+<tr>
+<td>Monday</td>
+<td>☀️ Sunny</td>
+<td>32°C</td>
+<td>10%</td>
+</tr>
+
+<tr>
+<td>Tuesday</td>
+<td>🌦️ Cloudy</td>
+<td>30°C</td>
+<td>40%</td>
+</tr>
+
+<tr>
+<td>Wednesday</td>
+<td>🌧️ Rain</td>
+<td>28°C</td>
+<td>70%</td>
+</tr>
+
+</table>
+
+<div class="card">
+    <h2>75%</h2>
+    <p>Humidity</p>
+</div>
+
+<div class="card">
+    <h2>40%</h2>
+    <p>Rain Chances</p>
+</div>
+
+<div class="card">
+    <h2>12 km/h</h2>
+    <p>Wind Speed</p>
+</div>
+
+</section>
+
+</body>
+</html>
